@@ -1,0 +1,333 @@
+body{
+height: 100%;
+}
+#header, #navigation{
+position:absolute;
+top:0;
+left:0;
+}
+#header{
+padding:3px 5px;
+width:auto;
+z-index:100;
+}
+#header #logo{
+font-size:25px;
+}
+#header #logo span{
+color:#bbb;
+}
+#navigation{
+width: 100%;
+min-width: 1024px;
+padding:0 4px 0 2px;
+z-index:99;
+}
+#navigation a{
+font-size:16px;
+padding:5px 15px;
+margin-top:4px;
+}
+#navigation a.current, #navigation a:hover{
+padding:7px 15px;
+}
+
+a.button {
+width: 250px;
+font-size: 19px;
+}
+
+a.backbutton {
+width: 280px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+font-size: 18px;
+font-weight: 300;
+margin-bottom: 16px;
+}
+
+#headerTitle {
+position: absolute;
+overflow: hidden;
+white-space: nowrap;
+text-overflow: ellipsis;
+padding:6px 15px;
+text-align: center;
+color: black;
+font-weight: 500;
+font-size: 18px;
+}
+
+#content{
+top: 31px;
+padding:10px 8px;
+position: relative;
+}
+
+.separator{
+float: left;
+box-sizing: border-box;
+height: 171px;
+border: 1px solid black;
+margin: 0 8px;
+}
+
+#projectInfo, #projectActions, #projectPublish, #clipCreation, #clipContainer {
+float: left;
+box-sizing: border-box;
+height: 171px;
+margin: 0 8px;
+}
+
+#clipContainer {
+height: auto;
+}
+
+/*Project tab*/
+#projectInfo .button, #projectPublish .button {
+width: 160px;
+}
+
+#projectInfo .button {
+float: right;
+margin: 0 0 0 8px;
+}
+
+#projectInfo {
+width: 40%;
+}
+
+
+#projectPublish {
+/* 60% - projectActions - 3*margins - 2*2px separator border */
+width: calc(60% - 200px - 5*16px - 4px);
+}
+
+#projectInfoTitle {
+display: inline-block;
+box-sizing: border-box;
+width: calc(100% - 320px - 16px);
+overflow: hidden;
+white-space: nowrap;
+text-overflow: ellipsis;
+font-size: 19px;
+font-weight: 500;
+margin-bottom: 0;
+padding: 8px 5px;
+}
+
+#projectInfoDescr {
+box-sizing: border-box;
+width: 100%;
+/*100% - title/button height - top margin*/
+height: calc(100% - 35px - 8px);
+border: 1px solid white;
+padding: 8px;
+margin-top: 8px;
+}
+
+#projectActions, #projectActions .button{
+width: 200px;
+}
+
+#projectActions .button {
+margin-bottom: 8px; /*calc((171px - 4*35px) / 3 );*/
+}
+
+#projectPublish label {
+display: block;
+}
+
+#exportProjectButton {
+display: block;
+margin-right: 16px;
+}
+
+#projectPublishCheck, #projectPublishCheck + label{
+float:left;
+margin: 10px 4px 14px 16px;
+font-size: 18px;
+}
+
+#projectPublishCheck + label {
+margin-left: 0;
+}
+
+#exportProjectInfo{
+clear: both;
+margin-bottom: 17px;
+font-size: 14px;
+}
+
+.projectLinkLabel {
+clear:both;
+margin-top: 8px;
+margin-bottom: 1px;
+}
+
+.projectLink {
+box-sizing: border-box;
+width: 100%;
+outline: none;
+resize: none;
+overflow: auto;
+line-height: 15px;
+}
+
+.projectLink::-webkit-scrollbar-thumb {
+	border-radius: 6px;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.projectLink::-webkit-scrollbar {
+	width: 6px;
+	height: 6px;
+	background: #BF0B1A;
+}
+
+#videoDirectLink {
+height: 28px;
+}
+#videoEmbedLink {
+/* 2*lineheight + padding*/
+height: 28px;
+}
+
+/* Collect Clips tab*/
+#clipCreation {
+width: auto;
+}
+
+#clipCreationLeft {
+float: left;
+height: 100%;
+background-color: black;
+}
+
+#thumbnail {
+width: 304px;
+height: 100%;
+}
+
+#clipCreationRight {
+float: right;
+width: 250px;
+height: 100%;
+padding-left: 8px;
+}
+
+#clipTitle {
+width: 100%;
+box-sizing: border-box;
+padding: 8px 8px;
+font-size: 19px;
+}
+
+#startButton, #endButton {
+width: 121px;
+margin: 19px 0 8px 0;
+}
+
+#startButton {
+float: left;
+}
+
+#endButton {
+float: right;
+}
+
+.timeString {
+display: inline-block;
+float: left;
+text-align: center;
+margin-bottom: 14px;
+font-size: 16px;
+font-weight: 200;
+background-color: #bf0b1a;
+color: white;
+border: 0;
+padding: 0;
+}
+
+#timeSeperator {
+width: 8px;
+}
+
+#startTime, #endTime {
+width: 121px;
+}
+
+#startTime:focus, #endTime:focus {
+outline: none;
+}
+
+#addSceneButton {
+margin: 0;
+}
+
+#clipContainer {
+width: calc(100% - 596px - 8px);
+margin-left: 0;
+}
+
+.clipElement {
+float: left;
+position: relative;
+margin: 0 0px 16px 8px;
+width: calc(20% - 8px);
+}
+
+.clipImage {
+width: 100%;
+}
+
+.clipMarker {
+position: absolute;
+top: 0;
+bottom: 0;
+border: 2px solid #F39C12;
+}
+
+.clipHider {
+position: absolute;
+top: 0;
+bottom: 0;
+opacity: 0.6;
+background-color: black;
+}
+
+.clipEventPane {
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+opacity: 0;
+}
+
+.clipSelector {
+position: absolute;
+top: -2px;
+bottom: -2px;
+left: -2px;
+right: -2px;
+border: 2px solid white;
+}
+
+#clipDeleteButton {
+position: absolute;
+top:0;
+bottom: auto;
+right:0;
+left: auto;
+border-top: none;
+border-right: none;
+background:#444;
+color:#fff;
+padding:3px 5px;
+cursor:pointer;
+font-family:Arial,sans-serif;
+font-size:13px;
+font-weight:bold;
+}
